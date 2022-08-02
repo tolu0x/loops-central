@@ -1,0 +1,462 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Axiforma", sans-serif;
+}
+
+header{
+    min-height: 100vh;
+    background-image: url(./images/Free\ Vector\ _\ Music\ vinyl\ record\ label\ with\ sound\ notes\ 1.png);
+    background-repeat: no-repeat;
+    background-color: #595959;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #000;
+    height: 50px;
+    padding-left: 1em;
+    padding-right: 1em;
+    position: relative;
+}
+
+.logo img{
+    display: inline-block;
+    margin-top: 10px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.nav-items{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.nav-items li{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.nav-items li a:hover{
+    color: #FB03F5;
+}
+
+.cta a{
+    background: linear-gradient(97.36deg, #45074F 15.49%, #30C18D 109.8%);
+    border-radius: 50px;
+    padding: 10px 32px;
+    color: #fff;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: #fff;
+}
+
+.main-container > *{
+    margin: 0 auto;
+}
+
+.music-controls{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    
+}
+
+.song-title{
+    font-weight: 900;
+    font-size: 31px;
+    padding-top: 1rem;
+}
+
+.now-playing{
+    color: #06FFF0;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.active{
+    color:  #FB03F5;
+}
+
+.story{
+    min-height: 100vh;
+    background-color: #fff;
+    color: #45074F;
+    padding: 1rem;
+    padding-bottom: 4rem;
+}
+
+.story-heading::before{
+    content: '';
+    display: block;
+    width: 200px;
+    height: 3px;
+    background-color: #06FFF0;
+    border-radius: 7px;
+    margin-bottom: 30px;
+}
+
+.story-heading p{
+    font-weight: 600;
+}
+
+.story-header{
+    color: #000;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 49px;
+}
+
+.first{
+    line-height: 80px;
+}
+.first-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.story-body{
+    width: 50%;
+    line-height: 25px;
+}
+
+.second-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.note::before, .note::after{
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 3px;
+    background-color: #06FFF0;
+    margin-bottom: 25px;
+}
+
+.story-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.story-item img{
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+}
+
+.story-item p{
+    width: 90%;
+    text-align: center;
+}
+
+.subscribe{
+    min-height: 100vh;
+    background: linear-gradient(180deg, #A3A3A3 0%, #171717 173.63%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.info h2{
+    font-weight: 800;
+    font-size: 2.3rem;
+}
+
+.ready{
+    color: #a603e1;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.trial-text{
+    color: #45074F;
+
+}
+
+.pricing-cards{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    width: 300px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.recommended{
+    background: linear-gradient(179.96deg, #4F0B4C 0.03%, rgba(10, 0, 9, 0) 145.97%);
+    border: 2px solid #FFFEFE;
+    border-radius: 29px;
+    height: 390px;
+    width: 300px;
+}
+
+.recommend{
+    color: #1DCD00;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-bottom: 1.2rem;
+}
+
+.tier{
+    color: #06FFF0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 38px;
+    text-align: center;
+}
+
+.num{
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: -5px;
+    color: #A50DBD;
+}
+
+.credits{
+    font-weight: 250;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #06FFF0;
+}
+
+.downloads{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    padding-top: 1rem;
+    color: #06FFF0;
+}
+
+.price{
+    font-weight: 700;
+    font-size: 32px;    
+    line-height: 53px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 2rem;
+}
+
+input[type='checkbox']{
+    outline: none;
+    border: none;
+    background-color: #D9D9D9;
+
+}
+
+.try-free{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 32px;
+    gap: 10px;
+    background: linear-gradient(97.36deg, #45074F 15.49%, #30C18D 109.8%);
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+}
+
+.enquiry{
+    color: #000;
+    text-decoration: underline;
+}
+
+.social-proof{
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.proof-header > h2{
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 107px;
+}
+
+.proof-text{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #45074F;
+    width: 500px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.second-text{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 33px;
+    text-align: center;
+    color: #BD00FF;
+}
+
+.testimonial{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 19px;
+    color: #FB03F5;
+    padding-top: 1rem;
+}
+
+.proofs{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 95%;
+    padding-top: 5rem;
+    padding-left: 20px;
+    gap: 20px;
+}
+
+.proof{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 33.33%;
+    gap: 10px;
+    text-align: left;
+
+}
+
+.proof img{
+    border-radius: 50%;
+    max-height: 100%;
+    width: 4rem;
+}
+
+.benefit{
+    font-weight: 500;
+    font-size: 16px;
+    color: #45074F;
+}
+
+.proof-body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.proof-body h6{
+    font-weight: 700;
+    font-size: 18px;
+    padding-top: 16px;
+    padding-bottom: 6px;
+}
+
+.role-text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #626262;
+}
+
+footer{
+    min-height: 50vh;
+    background-color: #000;
+    color: #fff;
+    padding-top: 4rem;
+}
+
+.footer-logo p{
+    padding-top: 2rem;
+}
+
+.footer-container{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-item h3{
+    padding-bottom: 2rem;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a{
+    padding-bottom: 1rem;
+}
